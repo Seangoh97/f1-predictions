@@ -35,6 +35,16 @@ def get(endpoint, **params):
 def main(first=2023, last=None, verbose=True):
     if last is None:
         last = pd.Timestamp.now(tz="UTC").year
+    # Reuse completed-session tables; fetch only new sessions.
+    def previous(name):
+        f = Path("data") / name
+        return pd.read_csv(f).to_dict("records") if f.exists() and f.stat().st_size else []
+    old_sessions = previous("of_sessions.csv")
+    old_laps = previous("of_laps.csv")
+    old_stints = previous("of_stints.csv")
+    lap_keys = {r["session_key"] for r in old_laps}
+    stint_keys = {r["session_key"] for r in old_stints}
+    complete = {r["session_key"] for r in old_sessions} & lap_keys & stint_keys
     sessions, laps, stints = [], [], []
     for year in range(first, last + 1):
         for s in get("sessions", year=year):
@@ -43,6 +53,10 @@ def main(first=2023, last=None, verbose=True):
             if pd.Timestamp(s["date_end"]) > pd.Timestamp.now(tz="UTC"):
                 continue
             sessions.append(s)
+            if s["session_key"] in complete:
+                laps.extend(r for r in old_laps if r["session_key"] == s["session_key"])
+                stints.extend(r for r in old_stints if r["session_key"] == s["session_key"])
+                continue
             for row in get("laps", session_key=s["session_key"]):
                 laps.append({k: row.get(k) for k in ["session_key", "driver_number", "lap_number",
                     "lap_duration", "is_pit_out_lap", "i1_speed", "i2_speed", "st_speed"]})

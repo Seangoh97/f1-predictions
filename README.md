@@ -1,3 +1,9 @@
+# F1 Predictions
+
+[Live dashboard](https://seangoh97.github.io/f1-predictions/) · [Automated updates](https://github.com/Seangoh97/f1-predictions/actions)
+
+Updates automatically every six hours using GitHub Actions and GitHub Pages. See [deployment notes](GITHUB_SETUP.md).
+
 # F1 race prediction model
 
 Gives each driver a chance of winning, finishing on the podium, scoring points and retiring in a
