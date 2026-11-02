@@ -1,0 +1,34 @@
+
+2024 championship after round 19. Still to run: Mexico City, São Paulo (sprint), Las Vegas, Qatar (sprint), Abu Dhabi
+
+Drivers
+        driver   now  title %  top 3 %  exp. pts range (5-95%)
+max_verstappen 354.0     95.5    100.0     439.1       405-474
+        norris 297.0      4.0     99.2     382.8       348-419
+       leclerc 275.0      0.5     94.1     360.6       327-396
+       piastri 247.0      0.0      5.7     310.6       281-344
+         sainz 215.0      0.0      1.0     286.9       257-321
+       russell 167.0      0.0      0.0     216.6       192-246
+      hamilton 177.0      0.0      0.0     201.8       185-223
+         perez 150.0      0.0      0.0     191.5       170-218
+        alonso  62.0      0.0      0.0      73.7         63-90
+    hulkenberg  29.0      0.0      0.0      40.1         30-56
+
+Drivers' title mathematically decided at:
+  São Paulo: 4.1%
+  Las Vegas: 31.5%
+  Qatar: 46.0%
+  Abu Dhabi: 18.1%
+
+Constructors
+        team   now  title %  exp. pts
+     mclaren 544.0     77.7     693.4
+     ferrari 496.0     17.8     653.5
+    red_bull 504.0      4.5     630.6
+    mercedes 344.0      0.0     418.3
+aston_martin  86.0      0.0     101.9
+        haas  38.0      0.0      55.3
+          rb  36.0      0.0      48.5
+    williams  17.0      0.0      27.8
+      alpine  13.0      0.0      22.0
+      sauber   0.0      0.0       3.8

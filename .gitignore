@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+site/
+data/sim_inputs_*.pkl
+data/season_tuning_cache.pkl
+
+.DS_Store
+.env
+.env.*
+*.pem
+data/cache/
+data/openf1/

@@ -1,0 +1,30 @@
+                       spearman    mae  winner  podium  top10
+season method                                                
+2025   baseline: grid     0.648  3.341   0.667   0.750  0.779
+       model              0.669  3.157   0.542   0.750  0.771
+2026   baseline: grid     0.683  3.205   0.722   0.630  0.767
+       model              0.720  3.103   0.611   0.648  0.778
+
+All test races:
+                spearman    mae  winner  podium  top10
+method                                                
+baseline: grid     0.663  3.283   0.690   0.698  0.774
+model              0.691  3.134   0.571   0.706  0.774
+
+Feature importance (latest model):
+grid_pct        0.367
+grid_f          0.232
+team_pos_5      0.128
+team_q_rank     0.089
+drv_pos_5       0.060
+drv_qgap_5      0.024
+best_gap        0.024
+drv_rpace_3     0.014
+teammate_gap    0.008
+fp_best_gap     0.007
+team_lr_pace    0.007
+drv_circ_pos    0.005
+team_rpace_3    0.005
+q1_gap          0.004
+field_size      0.003
+dtype: float64

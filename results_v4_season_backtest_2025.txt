@@ -1,0 +1,33 @@
+
+2025 championship after round 19. Still to run: Mexico City, São Paulo (sprint), Las Vegas, Qatar (sprint), Abu Dhabi
+
+Drivers
+        driver   now  title %  top 3 %  exp. pts range (5-95%)
+       piastri 346.0     46.3    100.0     413.2       384-445
+        norris 332.0     38.1     99.9     409.5       378-443
+max_verstappen 306.0     15.6     98.8     394.0       361-427
+       russell 252.0      0.0      1.4     326.5       296-359
+       leclerc 192.0      0.0      0.0     263.7       234-296
+      hamilton 142.0      0.0      0.0     200.1       174-230
+     antonelli  89.0      0.0      0.0     135.0       111-164
+         albon  73.0      0.0      0.0      77.4         73-89
+       tsunoda  28.0      0.0      0.0      52.1         36-74
+        alonso  37.0      0.0      0.0      49.9         39-67
+
+Drivers' title mathematically decided at:
+  Qatar: 24.9%
+  Abu Dhabi: 73.1%
+  level on points (decided by wins): 1.7%
+
+Constructors
+        team   now  title %  exp. pts
+     mclaren 678.0    100.0     822.7
+     ferrari 334.0      0.0     463.8
+    mercedes 341.0      0.0     461.4
+    red_bull 331.0      0.0     443.1
+    williams 111.0      0.0     125.0
+aston_martin  69.0      0.0      86.0
+          rb  72.0      0.0      85.2
+      sauber  59.0      0.0      69.2
+        haas  48.0      0.0      59.3
+      alpine  20.0      0.0      24.2

@@ -1,0 +1,29 @@
+Simulator settings picked on 2024: {'a': 1.0, 'b': 0.05, 'wet_mult': 2.0, 'noise': 'normal'}
+Simulator weight in the blend (rest is grid slot): {'win': np.float64(0.7), 'podium': np.float64(0.6), 'points': np.float64(0.8)}
+
+Brier scores (lower is better), 2025 and 2026:
+                        win  podium  points     dnf  winner_logloss
+method                                                             
+baseline: grid slot  0.0253  0.0605  0.1625  0.1275          1.1325
+blend (final)        0.0261  0.0581  0.1564  0.1233          1.0859
+simulator only       0.0277  0.0604  0.1592  0.1233          1.1422
+
+By season:
+                               win  podium  points     dnf  winner_logloss
+season method                                                             
+2025   baseline: grid slot  0.0275  0.0583  0.1645  0.1063          1.1058
+       blend (final)        0.0277  0.0547  0.1634  0.1057          1.0311
+       simulator only       0.0292  0.0568  0.1678  0.1057          1.0950
+2026   baseline: grid slot  0.0223  0.0634  0.1597  0.1557          1.1682
+       blend (final)        0.0239  0.0626  0.1470  0.1469          1.1590
+       simulator only       0.0256  0.0652  0.1476  0.1469          1.2052
+
+Podium calibration (predicted chance vs how often it happened):
+                predicted  actual  drivers
+bin                                       
+(-0.001, 0.05]      0.009   0.007      577
+(0.05, 0.15]        0.090   0.075       80
+(0.15, 0.3]         0.232   0.270       37
+(0.3, 0.5]          0.406   0.367       49
+(0.5, 0.7]          0.606   0.569       58
+(0.7, 0.9]          0.785   0.859       64
