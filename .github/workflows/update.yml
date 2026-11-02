@@ -1,0 +1,88 @@
+name: Update predictions
+
+on:
+  schedule:
+    # Every 6 hours. Picks up qualifying, races and new lap data within a few hours of them happening.
+    - cron: "17 */6 * * *"
+  push:
+    branches: [main]
+    paths-ignore: ["README.md", "GITHUB_SETUP.md"]
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Download new data and rebuild (disable to publish the saved dashboard)
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: update-predictions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Restore API caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            data/cache
+            data/openf1
+          key: f1-api-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: f1-api-${{ runner.os }}-
+
+      - name: Install libraries
+        run: pip install -r requirements.txt
+
+      - name: Update data, predictions and dashboard
+        if: github.event_name != 'workflow_dispatch' || inputs.refresh
+        run: python auto_update.py
+
+      - name: Save new data and logs to the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data logs dashboard.html
+          git restore --staged data/cache data/openf1 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+          else
+            git commit -m "Update data and predictions $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - name: Prepare the website
+        run: |
+          mkdir -p site
+          cp dashboard.html site/index.html
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
