@@ -333,3 +333,4 @@ session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_ke
 11404,Race,Race,2026-11-01T20:00:00+00:00,2026-11-01T22:00:00+00:00,1298,65,Mexico City,8,MEX,Mexico,Mexico City,-06:00:00,2026,False
 11405,Practice,Practice 1,2026-11-06T15:30:00+00:00,2026-11-06T16:30:00+00:00,1299,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2026,False
 11406,Practice,Practice 2,2026-11-06T19:00:00+00:00,2026-11-06T20:00:00+00:00,1299,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2026,False
+11407,Practice,Practice 3,2026-11-07T14:30:00+00:00,2026-11-07T15:30:00+00:00,1299,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2026,False
