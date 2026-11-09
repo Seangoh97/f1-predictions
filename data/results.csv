@@ -3875,3 +3875,25 @@ season,round,date,number,circuit,driver,team,grid,position,status,points,laps
 2026,19,2026-11-01,77,rodriguez,bottas,cadillac,21,20,Retired,0.0,42
 2026,19,2026-11-01,18,rodriguez,stroll,aston_martin,19,21,Retired,0.0,5
 2026,19,2026-11-01,14,rodriguez,alonso,aston_martin,17,22,Retired,0.0,5
+2026,20,2026-11-08,1,interlagos,norris,mclaren,1,1,Finished,25.0,71
+2026,20,2026-11-08,3,interlagos,max_verstappen,red_bull,21,2,Finished,18.0,71
+2026,20,2026-11-08,6,interlagos,hadjar,red_bull,5,3,Finished,15.0,71
+2026,20,2026-11-08,63,interlagos,russell,mercedes,7,4,Finished,12.0,71
+2026,20,2026-11-08,12,interlagos,antonelli,mercedes,2,5,Finished,10.0,71
+2026,20,2026-11-08,81,interlagos,piastri,mclaren,10,6,Finished,8.0,71
+2026,20,2026-11-08,30,interlagos,lawson,rb,3,7,Finished,6.0,71
+2026,20,2026-11-08,16,interlagos,leclerc,ferrari,14,8,Finished,4.0,71
+2026,20,2026-11-08,44,interlagos,hamilton,ferrari,20,9,Lapped,2.0,70
+2026,20,2026-11-08,27,interlagos,hulkenberg,audi,4,10,Lapped,1.0,70
+2026,20,2026-11-08,41,interlagos,arvid_lindblad,rb,18,11,Lapped,0.0,70
+2026,20,2026-11-08,14,interlagos,alonso,aston_martin,8,12,Lapped,0.0,70
+2026,20,2026-11-08,43,interlagos,colapinto,alpine,13,13,Lapped,0.0,70
+2026,20,2026-11-08,10,interlagos,gasly,alpine,15,14,Lapped,0.0,70
+2026,20,2026-11-08,23,interlagos,albon,williams,9,15,Lapped,0.0,70
+2026,20,2026-11-08,5,interlagos,bortoleto,audi,19,16,Lapped,0.0,70
+2026,20,2026-11-08,87,interlagos,bearman,haas,6,17,Lapped,0.0,70
+2026,20,2026-11-08,11,interlagos,perez,cadillac,22,18,Lapped,0.0,69
+2026,20,2026-11-08,55,interlagos,sainz,williams,12,19,Lapped,0.0,69
+2026,20,2026-11-08,51,interlagos,rafael_camara,haas,11,20,Lapped,0.0,69
+2026,20,2026-11-08,18,interlagos,stroll,aston_martin,16,21,Retired,0.0,30
+2026,20,2026-11-08,77,interlagos,bottas,cadillac,17,22,Did not start,0.0,0
