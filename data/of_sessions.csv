@@ -335,3 +335,5 @@ session_key,session_type,session_name,date_start,date_end,meeting_key,circuit_ke
 11406,Practice,Practice 2,2026-11-06T19:00:00+00:00,2026-11-06T20:00:00+00:00,1299,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2026,False
 11407,Practice,Practice 3,2026-11-07T14:30:00+00:00,2026-11-07T15:30:00+00:00,1299,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2026,False
 11412,Race,Race,2026-11-08T17:00:00+00:00,2026-11-08T19:00:00+00:00,1299,14,Interlagos,10,BRA,Brazil,São Paulo,-03:00:00,2026,False
+11413,Practice,Practice 1,2026-11-20T00:30:00+00:00,2026-11-20T01:30:00+00:00,1300,152,Las Vegas,19,USA,United States,Las Vegas,-08:00:00,2026,False
+11414,Practice,Practice 2,2026-11-20T04:00:00+00:00,2026-11-20T05:00:00+00:00,1300,152,Las Vegas,19,USA,United States,Las Vegas,-08:00:00,2026,False
